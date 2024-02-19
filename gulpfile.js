@@ -4,7 +4,7 @@ const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
 
 const scssFiles = './scss/*.scss';
-const outputCSS = './css/dist/';
+const outputCSS = './CSS/dist/';
 
 function compileSCSS() {
   return gulp
