@@ -1,0 +1,82 @@
+@import "scss/color-vars";
+@import "scss/font-mixins";
+@import "scss/position-mixins";
+
+.about-team {
+    display: flex;
+    width: 100%;
+    min-height: 400px;
+}
+
+.about-team-images {
+    position: relative;
+    width: 40%;
+}
+
+.team-img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.team-img-backgr-shape {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    bottom: -38px;
+    right: 0;
+}
+
+.about-team-content {
+    width: 60%;
+    padding-left: 36px;
+}
+
+.about-team-text {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 24px;
+    @include font-Sans;
+    margin-left: 36px;
+
+    p {
+        width: 70%;
+    }
+}
+
+.stick {
+    width: 8px;
+    height: 96px;
+    background-color: $light-pink;
+    margin-right: 24px;
+}
+
+.short-info {
+    width: 100%;
+    display: flex;
+    padding: 36px;
+    background-color: rgba(169, 191, 228, 0.8);
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.service-info {
+    flex-direction: column;
+    @include font-Sans;
+    @include flex-center;
+    flex: 1 1 100px;
+    max-width: 1200px;
+    text-align: center;
+    color: $white;
+    margin: 12px;
+
+    img {
+        margin-bottom: 12px;
+    }
+}
+
+.about-us-section {
+    margin-top: 24px;
+}

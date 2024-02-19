@@ -1,0 +1,59 @@
+@import "scss/color-vars";
+@import "scss/font-mixins";
+@import "scss/position-mixins";
+
+.dropdown {
+  display: none;
+  z-index: 999;
+  @include font-Sans;
+  font-weight: 400;
+
+  img {
+    width: 30px;
+  }
+}
+
+@media (max-width: 690px) {
+  .header-nav {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $light-pink;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: $white;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  @include flex-center;
+  color: $white;
+
+  &:hover {
+    background-color: $main-light-blue;
+  }
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  right: 0;
+}

@@ -1,0 +1,178 @@
+@import "scss/color-vars";
+@import "scss/font-mixins";
+
+.review-section {
+  background-color: $main-light-blue;
+  background-image: url(/images/rose-background.svg);
+  background-size: fill;
+  padding: 24px;
+
+  h2 {
+    color: $white;
+    background-color: $light-pink;
+    border-radius: 16px;
+    padding: 16px;
+    margin: 16px 36px;
+    width: auto;
+  }
+}
+
+.review-container img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.review-group {
+  .review-container {
+    &:nth-child(2n+1) img {
+      top: -40px;
+      right: -40px;
+    }
+
+    &:nth-child(2n) img {
+      top: -40px;
+      left: -40px;
+    }
+  }
+
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  @include font-Sans;
+  font-weight: 400;
+}
+
+.customer-review-data {
+  color: rgba(0, 0, 0, 0.6);
+  padding: 16px;
+}
+
+.review-container {
+  background-color: $transparent-white;
+  border-radius: 16px;
+  position: relative;
+
+  p {
+    padding: 24px;
+  }
+
+  width: 70%;
+  margin-bottom: 48px;
+}
+
+#reviewForm {
+  @include font-Sans;
+  font-weight: 400;
+  background-color: $transparent-white;
+  width: 40%;
+  border-radius: 16px;
+  padding: 16px;
+
+  input, textarea {
+    background-color: $light-pink;
+    border: none;
+    border-radius: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  input:focus, textarea:focus {
+    outline: none;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: $white;
+  }
+
+  label {
+    display: none;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+}
+
+.pagination-bckgr-ul {
+  background-color: rgba(256, 256, 256, 0.8);
+  border-radius: 16px;
+}
+
+@media (max-width: 950px) {
+  #reviewForm {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .review-section h2 {
+    margin: 0 0 48px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .catalogue-grid {
+    padding: 0 16px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-team-images {
+    display: none;
+  }
+
+  .about-team-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .stick {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 440px) {
+  .service-info img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .best-offer-container {
+    width: 100%;
+    min-height: 700px;
+    z-index: 100;
+
+    > {
+      p, h2 {
+        background-color: rgba(256, 256, 256, 0.8);
+      }
+    }
+  }
+
+  .best-bouquets-offers-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .main-offer-container {
+    padding: 36px;
+  }
+}
+
+@media (max-width: 760px) {
+  .flower-offer-decorator, .side-bouquet-1, .side-bouquet-2, .side-bouquet-3 {
+    display: none;
+  }
+}

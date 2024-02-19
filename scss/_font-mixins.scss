@@ -1,0 +1,11 @@
+@mixin font-Lora {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+@mixin font-Sans{
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;  
+}

@@ -1,0 +1,78 @@
+@import "scss/color-vars";
+@import "scss/font-mixins";
+
+.footer {
+  width: 100%;
+  background-color: $main-light-blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+
+  img {
+    width: 180px;
+  }
+}
+
+.footer-nav {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.footer-nav-container {
+  h3 {
+    color: $white;
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+
+  @include font-Sans;
+  line-height: 1.4rem;
+}
+
+.search-bar {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: solid 2px $white;
+  border-radius: 16px;
+  padding: 10px;
+
+  input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: $white;
+  }
+
+  button {
+    background: $light-pink;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: $white;
+  }
+
+  input::placeholder {
+    color: $white;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer > img {
+    display: none;
+  }
+}
+  
