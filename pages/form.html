@@ -16,34 +16,48 @@
         <h2>A test form</h2>
         <a href="/index.html">Return to site</a>
         <form action="/submit-form" method="post">
-            <label for="firstName">FirstName:</label>
-            <input type="text" id="firstName" name="first-name" required><br><br>
-            <label for="lastName">LastName:</label>
-            <input type="text" id="lastName" name="last-name" required><br><br>
-            
+            <fieldset>
+                <legend>Personal Information:</legend>
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="first-name" required placeholder="enter first name">
+                </div>
+                <br>
+                <div>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="last-name" required placeholder="enter last name">
+                </div>
+            </fieldset>
+            <br>
+            <br>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
-            
+            <input type="password" id="password" name="password" required placeholder="enter your password">
+            <br>
+            <br>
             <label>Gender:</label>
             <input type="radio" id="male" name="gender" value="male" required>
             <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="female" required>
-            <label for="female">Female</label><br><br>
-            
+            <label for="female">Female</label>
+            <br>
+            <br>
             <input type="checkbox" id="remember" name="remember">
-            <label for="remember">Remember me</label><br><br>
-            
+            <label for="remember">Remember me</label>
+            <br>
+            <br>
             <label for="city">City:</label>
             <select id="city" name="city" required>
                 <option value="">Select a city</option>
                 <option value="1">New York</option>
                 <option value="2">Los Angeles</option>
                 <option value="3">Chicago</option>
-            </select><br><br>
-            
+            </select>
+            <br>
+            <br>
             <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-            
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+            <br>
+            <br>
             <input type="submit" value="Submit">
         </form>
     </section>
