@@ -83,6 +83,10 @@
     width: 100%;
   }
 
+  textarea{
+    resize: none;
+  }
+
   input:focus, textarea:focus {
     outline: none;
   }
@@ -126,53 +130,3 @@
   }
 }
 
-@media (max-width: 650px) {
-  .about-team-images {
-    display: none;
-  }
-
-  .about-team-content {
-    width: 100%;
-    padding: 0;
-  }
-
-  .stick {
-    margin-right: 12px;
-  }
-}
-
-@media (max-width: 440px) {
-  .service-info img {
-    width: 120px;
-  }
-}
-
-@media (max-width: 1120px) {
-  .best-offer-container {
-    width: 100%;
-    min-height: 700px;
-    z-index: 100;
-
-    > {
-      p, h2 {
-        background-color: rgba(256, 256, 256, 0.8);
-      }
-    }
-  }
-
-  .best-bouquets-offers-container {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-
-  .main-offer-container {
-    padding: 36px;
-  }
-}
-
-@media (max-width: 760px) {
-  .flower-offer-decorator, .side-bouquet-1, .side-bouquet-2, .side-bouquet-3 {
-    display: none;
-  }
-}

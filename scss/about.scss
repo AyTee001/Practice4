@@ -80,3 +80,24 @@
 .about-us-section {
     margin-top: 24px;
 }
+
+@media (max-width: 650px) {
+    .about-team-images {
+      display: none;
+    }
+  
+    .about-team-content {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .stick {
+      margin-right: 12px;
+    }
+  }
+  
+  @media (max-width: 440px) {
+    .service-info img {
+      width: 120px;
+    }
+  }

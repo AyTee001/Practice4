@@ -136,3 +136,33 @@
   color: $main-light-blue;
   box-shadow: inset 0 0 0px 3px $main-light-blue;
 }
+
+@media (max-width: 1120px) {
+  .best-offer-container {
+    width: 100%;
+    min-height: 700px;
+    z-index: 100;
+
+    > {
+      p, h2 {
+        background-color: rgba(256, 256, 256, 0.8);
+      }
+    }
+  }
+
+  .best-bouquets-offers-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .main-offer-container {
+    padding: 36px;
+  }
+}
+
+@media (max-width: 760px) {
+  .flower-offer-decorator, .side-bouquet-1, .side-bouquet-2, .side-bouquet-3 {
+    display: none;
+  }
+}

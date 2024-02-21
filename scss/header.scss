@@ -50,8 +50,8 @@
     margin-right: 24px;
 }
 
-@media (max-width: 1050px) {
-    .header-nav {
-        width: 80%;
+@media (max-width: 490px){
+    .logo-container h1{
+        display: none;
     }
 }

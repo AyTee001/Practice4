@@ -1,5 +1,6 @@
 @import "scss/color-vars";
 @import "scss/font-mixins";
+@import "scss/position-mixins";
 
 .footer {
   width: 100%;
@@ -56,6 +57,12 @@
     border: none;
     cursor: pointer;
     color: $white;
+    @include flex-center;
+
+    > img{
+      width: 14px;
+      height: 14px;
+    }
   }
 
   input::placeholder {
