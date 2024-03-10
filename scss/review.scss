@@ -4,7 +4,7 @@
 .review-section {
   background-color: $main-light-blue;
   background-image: url(/images/rose-background.svg);
-  background-size: fill;
+  background-size: contain;
   padding: 24px;
 
   h2 {

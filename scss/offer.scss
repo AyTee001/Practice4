@@ -9,7 +9,7 @@
 
 .offer {
   width: 100%;
-  flex-grow: 1 1 300px;
+  flex: 1 1 300px;
   max-width: 400px;
   position: relative;
 
@@ -34,7 +34,7 @@
     font-size: 1rem;
 
     &:hover {
-      font-weight: 600px;
+      font-weight: 600;
       font-size: 1.2rem;
     }
   }
